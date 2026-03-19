@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ro-RO">
+	<Group Type="String">
+		<Items>
+<<<<<<<< HEAD:UsrSailboat/Resources/UsrSailboat.Entity/resource.ro-RO.xml
+			<Item Name="Caption" Value="Sailboat" />
+			<Item Name="Columns.UsrName.Caption" Value="Nume" />
+========
+			<Item Name="Caption" Value="Obiect" />
+>>>>>>>> main:UsrYacht/Resources/UsrTrafficLight.Entity/resource.ro-RO.xml
+		</Items>
+	</Group>
+</Resources>

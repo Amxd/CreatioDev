@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="uk-UA">
+	<Group Type="String">
+		<Items>
+<<<<<<<< HEAD:UsrSailboat/Resources/UsrSailboat.Entity/resource.uk-UA.xml
+			<Item Name="Caption" Value="Sailboat" />
+			<Item Name="Columns.UsrName.Caption" Value="Назва" />
+========
+			<Item Name="Caption" Value="Об'єкт" />
+>>>>>>>> main:UsrYacht/Resources/UsrTrafficLight.Entity/resource.uk-UA.xml
+		</Items>
+	</Group>
+</Resources>

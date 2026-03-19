@@ -1,0 +1,11 @@
+﻿{
+  "SqlScript": {
+    "UId": "1cd1f9e6-6a9f-bfe1-f3da-b1d92a0a9467",
+    "Name": "ContactAgeInDaysView_Script",
+    "DBEngineType": 0,
+    "InstallType": 0,
+    "ModifiedOnUtc": "\/Date(1773942933000)\/",
+    "BackwardCompatibilityConfirmed": false,
+    "DependsOn": []
+  }
+}

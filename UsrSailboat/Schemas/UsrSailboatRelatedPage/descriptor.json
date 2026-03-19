@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "d04ac6e2-22c1-4fae-80aa-49238bd4d80e",
+    "Name": "UsrSailboatRelatedPage",
+    "ModifiedOnUtc": "\/Date(1773942068000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Sailboat (Page settings)",
+    "DependsOn": []
+  }
+}
