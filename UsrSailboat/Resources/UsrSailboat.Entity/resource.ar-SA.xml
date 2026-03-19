@@ -2,12 +2,8 @@
 <Resources Culture="ar-SA">
 	<Group Type="String">
 		<Items>
-<<<<<<<< HEAD:UsrSailboat/Resources/UsrSailboat.Entity/resource.ar-SA.xml
 			<Item Name="Caption" Value="Sailboat" />
 			<Item Name="Columns.UsrName.Caption" Value="الاسم" />
-========
-			<Item Name="Caption" Value="كائن" />
->>>>>>>> main:UsrYacht/Resources/UsrTrafficLight.Entity/resource.ar-SA.xml
 		</Items>
 	</Group>
 </Resources>

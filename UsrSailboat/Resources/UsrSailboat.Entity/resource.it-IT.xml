@@ -2,12 +2,8 @@
 <Resources Culture="it-IT">
 	<Group Type="String">
 		<Items>
-<<<<<<<< HEAD:UsrSailboat/Resources/UsrSailboat.Entity/resource.it-IT.xml
 			<Item Name="Caption" Value="Sailboat" />
 			<Item Name="Columns.UsrName.Caption" Value="Nome" />
-========
-			<Item Name="Caption" Value="Oggetto" />
->>>>>>>> main:UsrYacht/Resources/UsrTrafficLight.Entity/resource.it-IT.xml
 		</Items>
 	</Group>
 </Resources>

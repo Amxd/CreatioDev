@@ -2,12 +2,8 @@
 <Resources Culture="sv-SE">
 	<Group Type="String">
 		<Items>
-<<<<<<<< HEAD:UsrSailboat/Resources/UsrSailboat.Entity/resource.sv-SE.xml
 			<Item Name="Caption" Value="Sailboat" />
 			<Item Name="Columns.UsrName.Caption" Value="Namn" />
-========
-			<Item Name="Caption" Value="Objekt" />
->>>>>>>> main:UsrYacht/Resources/UsrTrafficLight.Entity/resource.sv-SE.xml
 		</Items>
 	</Group>
 </Resources>
