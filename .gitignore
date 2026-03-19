@@ -1,9 +1,4 @@
 *
-<<<<<<< HEAD
 !UsrSailboat
 !UsrSailboat/**
-=======
-!UsrYacht
-!UsrYacht/**
->>>>>>> main
 !.gitignore
