@@ -1,24 +1,53 @@
- {
+{
 	"viewConfigDiff": [
 		{
 			"operation": "merge",
-			"name": "FolderTreeActions",
+			"name": "HeaderContainer",
 			"values": {
-				"rootSchemaName": "UsrSailboat"
+				"layoutConfig": {
+					"column": 1,
+					"colSpan": 1,
+					"row": 1,
+					"rowSpan": 1
+				}
 			}
 		},
 		{
 			"operation": "merge",
 			"name": "FolderTreeActions",
 			"values": {
-				"caption": "Folders"
+				"caption": "Folders",
+				"rootSchemaName": "UsrSailboat"
+			}
+		},
+		{
+			"operation": "merge",
+			"name": "ListContainer",
+			"values": {
+				"layoutConfig": {
+					"column": 1,
+					"colSpan": 1,
+					"row": 2,
+					"rowSpan": 1
+				}
+			}
+		},
+		{
+			"operation": "merge",
+			"name": "List",
+			"values": {
+				"layoutConfig": {
+					"column": 1,
+					"colSpan": 1,
+					"row": 1,
+					"rowSpan": 1
+				}
 			}
 		},
 		{
 			"operation": "merge",
 			"name": "ListItem",
 			"values": {
-				"title": "$PDS_UsrName",
 				"body": [
 					{
 						"value": "$PDS_CreatedOn"
@@ -26,14 +55,20 @@
 					{
 						"value": "$PDS_CreatedBy"
 					}
-				]
+				],
+				"title": "$PDS_UsrName"
 			}
 		}
 	],
 	"viewModelConfigDiff": [
 		{
 			"operation": "merge",
-			"path": ["attributes", "Items", "viewModelConfig", "attributes"],
+			"path": [
+				"attributes",
+				"Items",
+				"viewModelConfig",
+				"attributes"
+			],
 			"values": {
 				"PDS_Id": {
 					"modelConfig": {
@@ -61,11 +96,14 @@
 	"modelConfigDiff": [
 		{
 			"operation": "merge",
-			"path": ["dataSources", "PDS", "config"],
+			"path": [
+				"dataSources",
+				"PDS",
+				"config"
+			],
 			"values": {
 				"entitySchemaName": "UsrSailboat"
 			}
 		}
 	]
 }
- 

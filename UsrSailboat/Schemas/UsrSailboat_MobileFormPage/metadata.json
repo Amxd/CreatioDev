@@ -1,10 +1,31 @@
 = MetaData.Schema.UId "04ded467-10b9-4a59-bc1c-42d0d41a4368"
 = MetaData.Schema.A2 "UsrSailboat_MobileFormPage"
 = MetaData.Schema.A5 "d484d861-d8e5-4a3f-84ad-1d9256189431"
-~ MetaData.Schema.B2 ["cfe8c9c1-0d66-4c5f-a0b1-a24f4db8c3c2","c945fca2-fb68-45f4-8864-8457fa2f7114","f717850b-5012-410c-b672-28e144e9b00b","ae2b054a-c435-4f09-94ca-3dd913d6afaa"]
-= MetaData.Schema.B6 "a00051f4-cde3-4f3f-b08e-c5ad1a5c735a"
+= MetaData.Schema.B2.["b164d46b-8597-9ebb-46d8-55b1d4ea1509"].A4 "04ded467-10b9-4a59-bc1c-42d0d41a4368"
+= MetaData.Schema.B2.["c200c9e4-bb27-34bb-0677-d3704f55b553"].A4 "04ded467-10b9-4a59-bc1c-42d0d41a4368"
+= MetaData.Schema.B2.["fdd5e117-9949-fde8-2ae5-4718654c30d3"].A4 "04ded467-10b9-4a59-bc1c-42d0d41a4368"
+= MetaData.Schema.B2.["e46d47c6-0e04-8a79-824c-a5c84196a4ef"].A4 "04ded467-10b9-4a59-bc1c-42d0d41a4368"
+= MetaData.Schema.B2.["3206c30a-0579-02a2-ea55-5035855f8421"].A4 "04ded467-10b9-4a59-bc1c-42d0d41a4368"
+= MetaData.Schema.B2.["d17450a4-0218-42d0-2077-2c2ba433f84c"].A4 "04ded467-10b9-4a59-bc1c-42d0d41a4368"
+= MetaData.Schema.B2.["76293238-252d-7060-9d62-92d1ec83cc04"].A4 "04ded467-10b9-4a59-bc1c-42d0d41a4368"
+= MetaData.Schema.B2.["f3192c88-b650-97da-2063-44f32a5657f0"].A4 "04ded467-10b9-4a59-bc1c-42d0d41a4368"
+= MetaData.Schema.B2.["06aed8cd-8b71-0c5f-85eb-65e97859c045"].A4 "04ded467-10b9-4a59-bc1c-42d0d41a4368"
+= MetaData.Schema.B2.["5ef8af31-c40f-bc78-b781-c20db0565a26"].A4 "04ded467-10b9-4a59-bc1c-42d0d41a4368"
+= MetaData.Schema.B2.["9d199388-1281-1e5a-5786-e94fa72473e5"].A4 "04ded467-10b9-4a59-bc1c-42d0d41a4368"
+~ MetaData.Schema.B2 [
+  "b164d46b-8597-9ebb-46d8-55b1d4ea1509",
+  "c200c9e4-bb27-34bb-0677-d3704f55b553",
+  "fdd5e117-9949-fde8-2ae5-4718654c30d3",
+  "e46d47c6-0e04-8a79-824c-a5c84196a4ef",
+  "3206c30a-0579-02a2-ea55-5035855f8421",
+  "d17450a4-0218-42d0-2077-2c2ba433f84c",
+  "76293238-252d-7060-9d62-92d1ec83cc04",
+  "f3192c88-b650-97da-2063-44f32a5657f0",
+  "06aed8cd-8b71-0c5f-85eb-65e97859c045",
+  "5ef8af31-c40f-bc78-b781-c20db0565a26",
+  "9d199388-1281-1e5a-5786-e94fa72473e5"
+]
+= MetaData.Schema.B6 "640d5475-1f12-404d-af0d-47936d107bdc"
 = MetaData.Schema.HD1 "019c694a-1a3b-4812-b2e5-219b326061ae"
-= MetaData.Schema.HD6 "null"
 - MetaData.Schema.B7
-- MetaData.Schema.HD12
 + MetaData.Schema.B7 false

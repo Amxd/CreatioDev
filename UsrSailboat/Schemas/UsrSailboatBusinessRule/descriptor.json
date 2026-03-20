@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "beff1bc4-451c-47a9-8ca6-96e1d1b59deb",
     "Name": "UsrSailboatBusinessRule",
-    "ModifiedOnUtc": "\/Date(1774007143000)\/",
+    "ModifiedOnUtc": "\/Date(1774030453000)\/",
     "ManagerName": "AddonSchemaManager",
     "Caption": "Sailboat (Business rules)",
     "DependsOn": []

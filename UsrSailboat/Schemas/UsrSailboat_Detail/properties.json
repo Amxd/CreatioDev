@@ -1,6 +1,7 @@
 ﻿{
   "Properties": {
     "CreatedInVersion": "0.0.0.0",
+    "OptionalProperties": "{}",
     "SchemaType": "GridDetailViewModelSchema"
   }
 }

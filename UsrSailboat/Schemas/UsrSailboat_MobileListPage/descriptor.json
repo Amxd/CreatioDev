@@ -2,13 +2,12 @@
   "Descriptor": {
     "UId": "b8a7d2a6-fc3a-4781-a91a-4e175e583e4e",
     "Name": "UsrSailboat_MobileListPage",
-    "ModifiedOnUtc": "\/Date(1773942068000)\/",
+    "ModifiedOnUtc": "\/Date(1774030595000)\/",
     "Parent": {
       "UId": "011e7dda-a763-4535-9b9a-e09eddd047be",
       "Name": "BaseMobileListTemplate"
     },
     "ManagerName": "ClientUnitSchemaManager",
-    "Caption": "Sailboat mobile list page",
-    "DependsOn": []
+    "Caption": "Sailboat mobile list page"
   }
 }

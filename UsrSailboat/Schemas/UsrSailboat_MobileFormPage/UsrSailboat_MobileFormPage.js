@@ -1,6 +1,38 @@
 {
 	"viewConfigDiff": [
 		{
+			"operation": "merge",
+			"name": "Tabs",
+			"values": {
+				"layoutConfig": {
+					"column": 1,
+					"colSpan": 1,
+					"row": 1,
+					"rowSpan": 1
+				}
+			}
+		},
+		{
+			"operation": "merge",
+			"name": "AreaProfileContainer",
+			"values": {
+				"layoutConfig": {
+					"column": 1,
+					"colSpan": 1,
+					"row": 1,
+					"rowSpan": 1
+				}
+			}
+		},
+		{
+			"operation": "merge",
+			"name": "Feed",
+			"values": {
+				"dataSourceName": "PDS",
+				"entitySchemaName": "UsrSailboat"
+			}
+		},
+		{
 			"operation": "insert",
 			"name": "UsrName",
 			"values": {
@@ -10,19 +42,17 @@
 				"placeholder": "",
 				"readonly": false,
 				"multiline": false,
-				"labelPosition": "above"
+				"labelPosition": "above",
+				"layoutConfig": {
+					"column": 1,
+					"colSpan": 1,
+					"row": 1,
+					"rowSpan": 1
+				}
 			},
 			"parentName": "AreaProfileContainer",
 			"propertyName": "items",
 			"index": 0
-		},
-		{
-			"operation": "merge",
-			"name": "Feed",
-			"values": {
-				"dataSourceName": "PDS",
-				"entitySchemaName": "UsrSailboat"
-			}
 		}
 	],
 	"viewModelConfigDiff": [
@@ -50,28 +80,34 @@
 			"operation": "merge",
 			"path": [],
 			"values": {
-				"dataSources": {
-					"PDS": {
-						"type": "crt.EntityDataSource",
-						"scope": "page",
-						"config": {
-							"entitySchemaName": "UsrSailboat",
-							"loadParameters": {
-								"options": {
-									"pagingConfig": {
-										"rowCount": 1,
-										"rowsOffset": -1
-									},
-									"sortingConfig": {
-										"columns": []
-									}
-								}
-							},
-							"allowCopyingRecords": false
-						}
-					}
-				},
 				"primaryDataSourceName": "PDS"
+			}
+		},
+		{
+			"operation": "merge",
+			"path": [
+				"dataSources"
+			],
+			"values": {
+				"PDS": {
+					"type": "crt.EntityDataSource",
+					"scope": "page",
+					"config": {
+						"entitySchemaName": "UsrSailboat",
+						"loadParameters": {
+							"options": {
+								"pagingConfig": {
+									"rowCount": 1,
+									"rowsOffset": -1
+								},
+								"sortingConfig": {
+									"columns": []
+								}
+							}
+						},
+						"allowCopyingRecords": false
+					}
+				}
 			}
 		}
 	]

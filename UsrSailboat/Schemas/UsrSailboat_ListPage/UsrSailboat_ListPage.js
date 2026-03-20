@@ -62,7 +62,8 @@ define("UsrSailboat_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 							"caption": "#ResourceString(PDS_UsrCity)#",
 							"dataValueType": 10
 						}
-					]
+					],
+					"visible": true
 				}
 			},
 			{

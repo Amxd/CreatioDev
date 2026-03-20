@@ -2,13 +2,12 @@
   "Descriptor": {
     "UId": "04ded467-10b9-4a59-bc1c-42d0d41a4368",
     "Name": "UsrSailboat_MobileFormPage",
-    "ModifiedOnUtc": "\/Date(1773942068000)\/",
+    "ModifiedOnUtc": "\/Date(1774030571000)\/",
     "Parent": {
       "UId": "019c694a-1a3b-4812-b2e5-219b326061ae",
       "Name": "MobilePageWithTabsFreedomTemplate"
     },
     "ManagerName": "ClientUnitSchemaManager",
-    "Caption": "Sailboat mobile form page",
-    "DependsOn": []
+    "Caption": "Sailboat mobile form page"
   }
 }
