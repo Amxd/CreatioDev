@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "3accf583-7271-4804-a24c-39a4d193226d",
+    "Name": "UsrSailboat_FormPageBusinessRule",
+    "ModifiedOnUtc": "\/Date(1774006214000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Sailboat form page (Business rules)",
+    "DependsOn": []
+  }
+}

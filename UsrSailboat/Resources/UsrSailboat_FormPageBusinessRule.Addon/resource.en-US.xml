@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="AddonConfig.Rules.3b0f999d-f76b-af5e-b9b2-7751d33a71b8.Caption" Value="Hide elements: Comment" />
+			<Item Name="Caption" Value="Sailboat form page (Business rules)" />
+		</Items>
+	</Group>
+</Resources>
