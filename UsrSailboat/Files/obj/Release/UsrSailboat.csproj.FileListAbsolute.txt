@@ -1,0 +1,10 @@
+C:\Creatio\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\UsrSailboat\Files\Bin\UsrSailboat.dll
+C:\Creatio\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\UsrSailboat\Files\Bin\UsrSailboat.pdb
+C:\Creatio\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\UsrSailboat\Files\obj\Release\UsrSailboat.csproj.AssemblyReference.cache
+C:\Creatio\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\UsrSailboat\Files\obj\Release\UsrSailboat.GeneratedMSBuildEditorConfig.editorconfig
+C:\Creatio\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\UsrSailboat\Files\obj\Release\UsrSailboat.AssemblyInfoInputs.cache
+C:\Creatio\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\UsrSailboat\Files\obj\Release\UsrSailboat.AssemblyInfo.cs
+C:\Creatio\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\UsrSailboat\Files\obj\Release\UsrSailboat.csproj.CoreCompileInputs.cache
+C:\Creatio\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\UsrSailboat\Files\obj\Release\UsrSailboat.sourcelink.json
+C:\Creatio\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\UsrSailboat\Files\obj\Release\UsrSailboat.dll
+C:\Creatio\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\UsrSailboat\Files\obj\Release\UsrSailboat.pdb

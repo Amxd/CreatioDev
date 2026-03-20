@@ -51,10 +51,16 @@ define("UsrSailboat_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 							"dataValueType": 10
 						},
 						{
-							"id": "0d77bb29-38af-88b1-bd7e-36e5b04c4b00",
-							"code": "PDS_CreatedOn",
-							"caption": "#ResourceString(PDS_CreatedOn)#",
-							"dataValueType": 7
+							"id": "53f25887-7d2f-19c8-6fb2-7b8c1d31a51f",
+							"code": "PDS_UsrCountry",
+							"caption": "#ResourceString(PDS_UsrCountry)#",
+							"dataValueType": 10
+						},
+						{
+							"id": "6cf11b75-387a-5e34-ca6c-11bfbe8225a6",
+							"code": "PDS_UsrCity",
+							"caption": "#ResourceString(PDS_UsrCity)#",
+							"dataValueType": 10
 						}
 					]
 				}
@@ -106,9 +112,14 @@ define("UsrSailboat_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 							"path": "PDS.UsrStatus"
 						}
 					},
-					"PDS_CreatedOn": {
+					"PDS_UsrCountry": {
 						"modelConfig": {
-							"path": "PDS.CreatedOn"
+							"path": "PDS.UsrCountry"
+						}
+					},
+					"PDS_UsrCity": {
+						"modelConfig": {
+							"path": "PDS.UsrCity"
 						}
 					}
 				}
@@ -154,8 +165,11 @@ define("UsrSailboat_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 						"UsrStatus": {
 							"path": "UsrStatus"
 						},
-						"CreatedOn": {
-							"path": "CreatedOn"
+						"UsrCountry": {
+							"path": "UsrCountry"
+						},
+						"UsrCity": {
+							"path": "UsrCity"
 						}
 					}
 				}
