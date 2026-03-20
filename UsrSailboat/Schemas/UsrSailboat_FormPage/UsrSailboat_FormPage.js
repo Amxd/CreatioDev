@@ -2,6 +2,29 @@ define("UsrSailboat_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
+				"operation": "merge",
+				"name": "Feed",
+				"values": {
+					"dataSourceName": "PDS",
+					"entitySchemaName": "UsrSailboat"
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "AttachmentList",
+				"values": {
+					"columns": [
+						{
+							"id": "2f579bc5-e0c0-488d-9f40-063ad2c1c36c",
+							"code": "AttachmentListDS_Name",
+							"caption": "#ResourceString(AttachmentListDS_Name)#",
+							"dataValueType": 28,
+							"width": 200
+						}
+					]
+				}
+			},
+			{
 				"operation": "insert",
 				"name": "UsrName",
 				"values": {
@@ -21,90 +44,308 @@ define("UsrSailboat_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 				"index": 0
 			},
 			{
-				"operation": "merge",
-				"name": "AttachmentList",
+				"operation": "insert",
+				"name": "Price",
 				"values": {
-					"type": "crt.FileList",
-					"masterRecordColumnValue": "$Id",
-					"recordColumnName": "RecordId",
 					"layoutConfig": {
-						"colSpan": 2,
 						"column": 1,
-						"row": 1,
-						"rowSpan": 6
+						"colSpan": 1,
+						"row": 2,
+						"rowSpan": 1
 					},
-					"items": "$AttachmentList",
-					"primaryColumnName": "AttachmentListDS_Id",
-					"columns": [
-						{
-							"id": "2f579bc5-e0c0-488d-9f40-063ad2c1c36c",
-							"code": "AttachmentListDS_Name",
-							"caption": "#ResourceString(AttachmentListDS_Name)#",
-							"dataValueType": 28,
-							"width": 200
-						}
-					],
-					"viewType": "gallery",
-					"tileSize": "small"
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_UsrPrice_ya3y6hb",
+					"control": "$PDS_UsrPrice_ya3y6hb",
+					"readonly": false,
+					"placeholder": "",
+					"labelPosition": "auto",
+					"tooltip": ""
 				},
-				"parentName": "AttachmentsTabContainer",
+				"parentName": "SideAreaProfileContainer",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "DriveType",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_UsrDriveType_odg6yze",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": false,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_UsrDriveType_odg6yze",
+					"valueDetails": null,
+					"visible": true,
+					"readonly": false,
+					"placeholder": ""
+				},
+				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
 				"index": 0
 			},
 			{
-				"operation": "merge",
-				"name": "Feed",
+				"operation": "insert",
+				"name": "Status",
 				"values": {
-					"type": "crt.Feed",
-					"feedType": "Record",
-					"primaryColumnValue": "$Id",
-					"cardState": "$CardState",
-					"dataSourceName": "PDS",
-					"entitySchemaName": "UsrSailboat"
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_UsrStatus_67bhqwl",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": false,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_UsrStatus_67bhqwl",
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"valueDetails": null
 				},
-				"parentName": "FeedTabContainer",
+				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
-				"index": 0
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "Comment",
+				"values": {
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_UsrComment_3mvowoh",
+					"control": "$PDS_UsrComment_3mvowoh",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto",
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 2,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "Manager",
+				"values": {
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_UsrManager_j02v0f3",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_UsrManager_j02v0f3",
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"valueDetails": null
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "PassengersCount",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 3,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_UsrPassengersCount_apj5crs",
+					"control": "$PDS_UsrPassengersCount_apj5crs",
+					"readonly": false,
+					"placeholder": "",
+					"labelPosition": "auto",
+					"tooltip": ""
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "Number",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 3,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_UsrNumber_kfz0n2l",
+					"control": "$PDS_UsrNumber_kfz0n2l",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": true,
+					"multiline": false,
+					"labelPosition": "auto",
+					"visible": true
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 5
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
-		viewModelConfig: /**SCHEMA_VIEW_MODEL_CONFIG*/{
-			"attributes": {
-				"UsrName": {
-					"modelConfig": {
-						"path": "PDS.UsrName"
-					}
-				},
-				"Id": {
-					"modelConfig": {
-						"path": "PDS.Id"
-					}
-				}
-			}
-		}/**SCHEMA_VIEW_MODEL_CONFIG*/,
-		modelConfig: /**SCHEMA_MODEL_CONFIG*/{
-			"dataSources": {
-				"PDS": {
-					"type": "crt.EntityDataSource",
-					"config": {
-						"entitySchemaName": "UsrSailboat"
+		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
+			{
+				"operation": "merge",
+				"path": [
+					"attributes"
+				],
+				"values": {
+					"UsrName": {
+						"modelConfig": {
+							"path": "PDS.UsrName"
+						}
 					},
-					"scope": "page"
-				},
-				"AttachmentListDS": {
-					"type": "crt.EntityDataSource",
-					"scope": "viewElement",
-					"config": {
-						"entitySchemaName": "SysFile",
-						"attributes": {
-							"Name": {
-								"path": "Name"
+					"PDS_UsrPrice_ya3y6hb": {
+						"modelConfig": {
+							"path": "PDS.UsrPrice"
+						}
+					},
+					"PDS_UsrDriveType_odg6yze": {
+						"modelConfig": {
+							"path": "PDS.UsrDriveType"
+						}
+					},
+					"PDS_UsrDriveType_odg6yze_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
 							}
+						}
+					},
+					"PDS_UsrStatus_67bhqwl": {
+						"modelConfig": {
+							"path": "PDS.UsrStatus"
+						}
+					},
+					"PDS_UsrStatus_67bhqwl_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"PDS_UsrComment_3mvowoh": {
+						"modelConfig": {
+							"path": "PDS.UsrComment"
+						}
+					},
+					"PDS_UsrManager_j02v0f3": {
+						"modelConfig": {
+							"path": "PDS.UsrManager"
+						}
+					},
+					"PDS_UsrManager_j02v0f3_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"PDS_UsrPassengersCount_apj5crs": {
+						"modelConfig": {
+							"path": "PDS.UsrPassengersCount"
+						}
+					},
+					"PDS_UsrNumber_kfz0n2l": {
+						"modelConfig": {
+							"path": "PDS.UsrNumber"
 						}
 					}
 				}
 			},
-			"primaryDataSourceName": "PDS"
-		}/**SCHEMA_MODEL_CONFIG*/,
+			{
+				"operation": "merge",
+				"path": [
+					"attributes",
+					"Id",
+					"modelConfig"
+				],
+				"values": {
+					"path": "PDS.Id"
+				}
+			}
+		]/**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/,
+		modelConfigDiff: /**SCHEMA_MODEL_CONFIG_DIFF*/[
+			{
+				"operation": "merge",
+				"path": [],
+				"values": {
+					"primaryDataSourceName": "PDS"
+				}
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"dataSources"
+				],
+				"values": {
+					"PDS": {
+						"type": "crt.EntityDataSource",
+						"config": {
+							"entitySchemaName": "UsrSailboat"
+						},
+						"scope": "page"
+					}
+				}
+			}
+		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
 		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
 		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/

@@ -645,6 +645,8 @@
 	<ItemGroup Label="Standalone package external assembly references" />
 	<ItemGroup Label="Entity Files">
 		<Compile Remove="$(RelativePkgFolderPath)/UsrSailboat/Schemas/UsrSailboat/UsrSailboat.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrSailboat/Schemas/UsrSailboat/UsrSailboat.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/UsrSailboat/Schemas/UsrSailboatDriveType/UsrSailboatDriveType.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrSailboat/Schemas/UsrSailboatDriveType/UsrSailboatDriveType.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/UsrSailboat/Schemas/UsrSailboatStatus/UsrSailboatStatus.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrSailboat/Schemas/UsrSailboatStatus/UsrSailboatStatus.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/UsrSailboat/Schemas/UsrViewContactAgeInDays/UsrViewContactAgeInDays.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrSailboat/Schemas/UsrViewContactAgeInDays/UsrViewContactAgeInDays.cs')" />
 	</ItemGroup>
 	<ItemGroup Label="3rd Party References"></ItemGroup>

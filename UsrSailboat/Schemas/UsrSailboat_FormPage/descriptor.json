@@ -2,13 +2,12 @@
   "Descriptor": {
     "UId": "4a6ebb44-aebb-4135-a7ba-faa460359424",
     "Name": "UsrSailboat_FormPage",
-    "ModifiedOnUtc": "\/Date(1773942068000)\/",
+    "ModifiedOnUtc": "\/Date(1773999025000)\/",
     "Parent": {
       "UId": "3b2e117f-8c6b-4ca5-80a2-7ebb497cddf9",
       "Name": "PageWithTabsFreedomTemplate"
     },
     "ManagerName": "ClientUnitSchemaManager",
-    "Caption": "Sailboat form page",
-    "DependsOn": []
+    "Caption": "Sailboat form page"
   }
 }
