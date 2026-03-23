@@ -43,6 +43,83 @@
   "A4": "4a6ebb44-aebb-4135-a7ba-faa460359424",
   "A5": "3ac8eccb-9516-4513-a725-055a3f8ee7e9"
 }
++ MetaData.Schema.B2 {
+  "UId": "10e78463-479a-af96-6fbe-d7a11b9b55c2",
+  "A2": "ManagerEmail_label",
+  "A3": "4a6ebb44-aebb-4135-a7ba-faa460359424",
+  "A4": "4a6ebb44-aebb-4135-a7ba-faa460359424",
+  "A5": "3ac8eccb-9516-4513-a725-055a3f8ee7e9"
+}
++ MetaData.Schema.B2 {
+  "UId": "3568f4a1-4528-599d-bcb6-a84863f300ae",
+  "A2": "PriceCannotBeLess",
+  "A3": "4a6ebb44-aebb-4135-a7ba-faa460359424",
+  "A4": "4a6ebb44-aebb-4135-a7ba-faa460359424",
+  "A5": "3ac8eccb-9516-4513-a725-055a3f8ee7e9"
+}
++ MetaData.Schema.B2 {
+  "UId": "e48dc358-49a2-40a4-7dee-b740f9c2c166",
+  "A2": "PassengersCountCannotBeLess",
+  "A3": "4a6ebb44-aebb-4135-a7ba-faa460359424",
+  "A4": "4a6ebb44-aebb-4135-a7ba-faa460359424",
+  "A5": "3ac8eccb-9516-4513-a725-055a3f8ee7e9"
+}
++ MetaData.Schema.B2 {
+  "UId": "3f23f012-4117-349d-0798-4e76d93df0eb",
+  "A2": "GridDetailSearchFilter_d8j54yh_placeholder",
+  "A3": "4a6ebb44-aebb-4135-a7ba-faa460359424",
+  "A4": "4a6ebb44-aebb-4135-a7ba-faa460359424",
+  "A5": "3ac8eccb-9516-4513-a725-055a3f8ee7e9"
+}
++ MetaData.Schema.B2 {
+  "UId": "3a6c1665-4256-dd5b-ee40-3ec5f5693e6d",
+  "A2": "GridDetailImportDataBtn_py6wbpq_caption",
+  "A3": "4a6ebb44-aebb-4135-a7ba-faa460359424",
+  "A4": "4a6ebb44-aebb-4135-a7ba-faa460359424",
+  "A5": "3ac8eccb-9516-4513-a725-055a3f8ee7e9"
+}
++ MetaData.Schema.B2 {
+  "UId": "23e5d297-10fe-5169-ca19-34d71768b803",
+  "A2": "GridDetailExportDataBtn_f3ohyyj_caption",
+  "A3": "4a6ebb44-aebb-4135-a7ba-faa460359424",
+  "A4": "4a6ebb44-aebb-4135-a7ba-faa460359424",
+  "A5": "3ac8eccb-9516-4513-a725-055a3f8ee7e9"
+}
++ MetaData.Schema.B2 {
+  "UId": "824d3359-63f5-cb5a-51a9-f1a4894987c1",
+  "A2": "GridDetailSettingsBtn_cfzpx8w_caption",
+  "A3": "4a6ebb44-aebb-4135-a7ba-faa460359424",
+  "A4": "4a6ebb44-aebb-4135-a7ba-faa460359424",
+  "A5": "3ac8eccb-9516-4513-a725-055a3f8ee7e9"
+}
++ MetaData.Schema.B2 {
+  "UId": "38753d26-7e19-6c83-f905-d35eb4015bca",
+  "A2": "GridDetailRefreshBtn_3sjmnid_caption",
+  "A3": "4a6ebb44-aebb-4135-a7ba-faa460359424",
+  "A4": "4a6ebb44-aebb-4135-a7ba-faa460359424",
+  "A5": "3ac8eccb-9516-4513-a725-055a3f8ee7e9"
+}
++ MetaData.Schema.B2 {
+  "UId": "3714c0c6-65e3-f9af-049f-b206e0c2eddc",
+  "A2": "GridDetailAddBtn_8qy0tc5_caption",
+  "A3": "4a6ebb44-aebb-4135-a7ba-faa460359424",
+  "A4": "4a6ebb44-aebb-4135-a7ba-faa460359424",
+  "A5": "3ac8eccb-9516-4513-a725-055a3f8ee7e9"
+}
++ MetaData.Schema.B2 {
+  "UId": "6fbd5676-26e2-6991-5a04-d6a55b16468d",
+  "A2": "ExpansionPanel_e72kh4d_title",
+  "A3": "4a6ebb44-aebb-4135-a7ba-faa460359424",
+  "A4": "4a6ebb44-aebb-4135-a7ba-faa460359424",
+  "A5": "3ac8eccb-9516-4513-a725-055a3f8ee7e9"
+}
++ MetaData.Schema.B2 {
+  "UId": "bdf6bd9d-f692-db2f-d2b2-8ff45275c341",
+  "A2": "CategoriesMultiSelect_label",
+  "A3": "4a6ebb44-aebb-4135-a7ba-faa460359424",
+  "A4": "4a6ebb44-aebb-4135-a7ba-faa460359424",
+  "A5": "3ac8eccb-9516-4513-a725-055a3f8ee7e9"
+}
 = MetaData.Schema.B2.["fd9e5bd2-19ad-68b5-1356-fe7b39d36f28"].A4 "4a6ebb44-aebb-4135-a7ba-faa460359424"
 = MetaData.Schema.B2.["a77180d7-a9d0-5c7d-a47b-74c0545a1774"].A4 "4a6ebb44-aebb-4135-a7ba-faa460359424"
 = MetaData.Schema.B2.["a53e6c9a-741a-21de-9293-9d87d6014595"].A4 "4a6ebb44-aebb-4135-a7ba-faa460359424"
@@ -63,6 +140,17 @@
   "1e519599-1a67-ed54-2c46-4e2db3119a1b",
   "99bb74c5-9b37-e732-0168-eabbd3d2eedf",
   "0a90f5c0-7be3-1da5-e164-4ba657567c94",
+  "10e78463-479a-af96-6fbe-d7a11b9b55c2",
+  "3568f4a1-4528-599d-bcb6-a84863f300ae",
+  "e48dc358-49a2-40a4-7dee-b740f9c2c166",
+  "3f23f012-4117-349d-0798-4e76d93df0eb",
+  "3a6c1665-4256-dd5b-ee40-3ec5f5693e6d",
+  "23e5d297-10fe-5169-ca19-34d71768b803",
+  "824d3359-63f5-cb5a-51a9-f1a4894987c1",
+  "38753d26-7e19-6c83-f905-d35eb4015bca",
+  "3714c0c6-65e3-f9af-049f-b206e0c2eddc",
+  "6fbd5676-26e2-6991-5a04-d6a55b16468d",
+  "bdf6bd9d-f692-db2f-d2b2-8ff45275c341",
   "fd9e5bd2-19ad-68b5-1356-fe7b39d36f28",
   "a77180d7-a9d0-5c7d-a47b-74c0545a1774",
   "a53e6c9a-741a-21de-9293-9d87d6014595",

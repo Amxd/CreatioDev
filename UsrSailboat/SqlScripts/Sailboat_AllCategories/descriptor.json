@@ -1,0 +1,11 @@
+﻿{
+  "SqlScript": {
+    "UId": "6eccedf2-7bd4-5c5d-5bb6-9479e8eeee8a",
+    "Name": "Sailboat_AllCategories",
+    "DBEngineType": 0,
+    "InstallType": 0,
+    "ModifiedOnUtc": "\/Date(1774265659000)\/",
+    "BackwardCompatibilityConfirmed": false,
+    "DependsOn": []
+  }
+}

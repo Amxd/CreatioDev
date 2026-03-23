@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="AddonConfig.Rules.1ae5159e-0054-968c-16d4-32c5a1f6c0c9.Caption" Value="ChildRule-8f44f6a9-02ca-5eb5-af9a-1f044e712b69-ClearValue" />
+			<Item Name="AddonConfig.Rules.4bf74bd2-1eae-6a51-1824-fc645364f48c.Caption" Value="Set values: Ticket price, EUR" />
 			<Item Name="AddonConfig.Rules.601dac34-dec4-ab35-b3f4-fb697d2a4292.Caption" Value="ChildRule-8f44f6a9-02ca-5eb5-af9a-1f044e712b69-PopulateValue" />
 			<Item Name="AddonConfig.Rules.87c37402-552b-b135-c6ca-8caf593ffde5.Caption" Value="Apply static filter: Manager" />
 			<Item Name="AddonConfig.Rules.8f44f6a9-02ca-5eb5-af9a-1f044e712b69.Caption" Value="Apply City filter" />

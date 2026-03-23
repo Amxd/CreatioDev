@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "c3718de3-8f7b-4aaf-a733-b7cdf14e7541",
+    "Name": "UsrSailboatRentalRelatedPage",
+    "ModifiedOnUtc": "\/Date(1774262595000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Sailboat Rental (Page settings)",
+    "DependsOn": []
+  }
+}

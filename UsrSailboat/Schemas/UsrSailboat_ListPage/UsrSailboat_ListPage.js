@@ -3,6 +3,13 @@ define("UsrSailboat_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
 				"operation": "merge",
+				"name": "AddButton",
+				"values": {
+					"size": "large"
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "MenuItem_ImportFromExcel",
 				"values": {
 					"clicked": {
@@ -63,6 +70,19 @@ define("UsrSailboat_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 							"dataValueType": 10
 						}
 					],
+					"features": {
+						"rows": {
+							"selection": {
+								"enable": true,
+								"multiple": true
+							}
+						},
+						"editable": {
+							"enable": false,
+							"itemsCreation": false,
+							"floatingEditPanel": false
+						}
+					},
 					"visible": true
 				}
 			},
@@ -136,8 +156,8 @@ define("UsrSailboat_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 				"values": {
 					"default": [
 						{
-							"direction": "desc",
-							"columnName": "CreatedOn"
+							"direction": "asc",
+							"columnName": "UsrName"
 						}
 					]
 				}

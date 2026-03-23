@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UsrSailboat")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("8.3.3.3193")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("8.3.3.3193+b305220e240cb4bdf0c86115967137eb0b13969e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("8.3.3.3193+4512fe01d0d38694a838446e90e64e62394af4a6")]
 [assembly: System.Reflection.AssemblyProductAttribute("UsrSailboat")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UsrSailboat")]
 [assembly: System.Reflection.AssemblyVersionAttribute("8.3.3.3193")]

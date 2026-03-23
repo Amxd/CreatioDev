@@ -277,7 +277,7 @@ define("UsrSailboat_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 			},
 			{
 				"operation": "insert",
-				"name": "Number",
+				"name": "ManagerEmail",
 				"values": {
 					"layoutConfig": {
 						"column": 2,
@@ -285,9 +285,9 @@ define("UsrSailboat_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 						"row": 3,
 						"rowSpan": 1
 					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_UsrNumber_kfz0n2l",
-					"control": "$PDS_UsrNumber_kfz0n2l",
+					"type": "crt.EmailInput",
+					"label": "#ResourceString(ManagerEmail_label)#",
+					"control": "$PDS_UsrManagerEmail_23wkjdo",
 					"placeholder": "",
 					"tooltip": "",
 					"readonly": true,
@@ -330,12 +330,36 @@ define("UsrSailboat_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 			},
 			{
 				"operation": "insert",
-				"name": "City",
+				"name": "Number",
 				"values": {
 					"layoutConfig": {
 						"column": 2,
 						"colSpan": 1,
 						"row": 4,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_UsrNumber_kfz0n2l",
+					"control": "$PDS_UsrNumber_kfz0n2l",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": true,
+					"multiline": false,
+					"labelPosition": "auto",
+					"visible": true
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 7
+			},
+			{
+				"operation": "insert",
+				"name": "City",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 5,
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
@@ -355,7 +379,422 @@ define("UsrSailboat_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
-				"index": 7
+				"index": 8
+			},
+			{
+				"operation": "insert",
+				"name": "CategoriesMultiSelect",
+				"values": {
+					"type": "crt.MultiSelect",
+					"label": "#ResourceString(CategoriesMultiSelect_label)#",
+					"recordId": "$Id",
+					"recordRelationColumnName": "UsrParentSailboat",
+					"selectSchemaName": "UsrSailboatCategoriesStorage",
+					"selectColumnName": "UsrCategory",
+					"visible": true,
+					"labelPosition": "auto",
+					"placeholder": "",
+					"tooltip": "",
+					"required": false
+				},
+				"parentName": "GeneralInfoTab",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "ExpansionPanel_e72kh4d",
+				"values": {
+					"type": "crt.ExpansionPanel",
+					"tools": [],
+					"items": [],
+					"title": "#ResourceString(ExpansionPanel_e72kh4d_title)#",
+					"toggleType": "default",
+					"togglePosition": "before",
+					"expanded": true,
+					"labelColor": "auto",
+					"fullWidthHeader": false,
+					"titleWidth": 20,
+					"padding": {
+						"top": "small",
+						"bottom": "small",
+						"left": "none",
+						"right": "none"
+					},
+					"fitContent": true
+				},
+				"parentName": "GeneralInfoTab",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_08l17wp",
+				"values": {
+					"type": "crt.GridContainer",
+					"rows": "minmax(max-content, 24px)",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": 0
+					},
+					"styles": {
+						"overflow-x": "hidden"
+					},
+					"items": []
+				},
+				"parentName": "ExpansionPanel_e72kh4d",
+				"propertyName": "tools",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_8g40fg2",
+				"values": {
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"gap": "none",
+					"alignItems": "center",
+					"items": [],
+					"layoutConfig": {
+						"colSpan": 1,
+						"column": 1,
+						"row": 1,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_08l17wp",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailAddBtn_8qy0tc5",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(GridDetailAddBtn_8qy0tc5_caption)#",
+					"icon": "add-button-icon",
+					"iconPosition": "only-icon",
+					"color": "default",
+					"size": "medium",
+					"clicked": {
+						"request": "crt.CreateRecordRequest",
+						"params": {
+							"entityName": "UsrSailboatRental",
+							"defaultValues": [
+								{
+									"attributeName": "UsrParentSailboat",
+									"value": "$Id"
+								}
+							]
+						}
+					},
+					"visible": true,
+					"clickMode": "default"
+				},
+				"parentName": "FlexContainer_8g40fg2",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailRefreshBtn_3sjmnid",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(GridDetailRefreshBtn_3sjmnid_caption)#",
+					"icon": "reload-icon",
+					"iconPosition": "only-icon",
+					"color": "default",
+					"size": "medium",
+					"clicked": {
+						"request": "crt.LoadDataRequest",
+						"params": {
+							"config": {
+								"loadType": "reload"
+							},
+							"dataSourceName": "GridDetail_kwt0jsmDS"
+						}
+					}
+				},
+				"parentName": "FlexContainer_8g40fg2",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailSettingsBtn_cfzpx8w",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(GridDetailSettingsBtn_cfzpx8w_caption)#",
+					"icon": "actions-button-icon",
+					"iconPosition": "only-icon",
+					"color": "default",
+					"size": "medium",
+					"clickMode": "menu",
+					"menuItems": []
+				},
+				"parentName": "FlexContainer_8g40fg2",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailExportDataBtn_f3ohyyj",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(GridDetailExportDataBtn_f3ohyyj_caption)#",
+					"icon": "export-button-icon",
+					"color": "default",
+					"size": "medium",
+					"clicked": {
+						"request": "crt.ExportDataGridToExcelRequest",
+						"params": {
+							"viewName": "SailboatGridDetail"
+						}
+					}
+				},
+				"parentName": "GridDetailSettingsBtn_cfzpx8w",
+				"propertyName": "menuItems",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailImportDataBtn_py6wbpq",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(GridDetailImportDataBtn_py6wbpq_caption)#",
+					"icon": "import-button-icon",
+					"color": "default",
+					"size": "medium",
+					"clicked": {
+						"request": "crt.ImportDataRequest",
+						"params": {
+							"entitySchemaName": "UsrSailboatRental"
+						}
+					}
+				},
+				"parentName": "GridDetailSettingsBtn_cfzpx8w",
+				"propertyName": "menuItems",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailSearchFilter_d8j54yh",
+				"values": {
+					"type": "crt.SearchFilter",
+					"placeholder": "#ResourceString(GridDetailSearchFilter_d8j54yh_placeholder)#",
+					"iconOnly": true,
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "GridDetailSearchFilter_d8j54yh_GridDetail_kwt0jsm",
+								"converters": [
+									{
+										"converter": "crt.SearchFilterAttributeConverter",
+										"args": [
+											"GridDetail_kwt0jsm"
+										]
+									}
+								]
+							}
+						],
+						"from": [
+							"GridDetailSearchFilter_d8j54yh_SearchValue",
+							"GridDetailSearchFilter_d8j54yh_FilteredColumnsGroups"
+						]
+					}
+				},
+				"parentName": "FlexContainer_8g40fg2",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_5ap7wow",
+				"values": {
+					"type": "crt.GridContainer",
+					"rows": "minmax(max-content, 32px)",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": 0
+					},
+					"styles": {
+						"overflow-x": "hidden"
+					},
+					"items": []
+				},
+				"parentName": "ExpansionPanel_e72kh4d",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "SailboatGridDetail",
+				"values": {
+					"type": "crt.DataGrid",
+					"layoutConfig": {
+						"colSpan": 2,
+						"column": 1,
+						"row": 1,
+						"rowSpan": 6
+					},
+					"features": {
+						"rows": {
+							"selection": {
+								"enable": true,
+								"multiple": true
+							}
+						}
+					},
+					"items": "$GridDetail_kwt0jsm",
+					"activeRow": "$GridDetail_kwt0jsm_ActiveRow",
+					"selectionState": "$GridDetail_kwt0jsm_SelectionState",
+					"_selectionOptions": {
+						"attribute": "GridDetail_kwt0jsm_SelectionState"
+					},
+					"primaryColumnName": "GridDetail_kwt0jsmDS_Id",
+					"columns": [
+						{
+							"id": "34e25d18-4a73-fcd8-1fd3-feb21697213c",
+							"code": "GridDetail_kwt0jsmDS_UsrStartDate",
+							"caption": "#ResourceString(GridDetail_kwt0jsmDS_UsrStartDate)#",
+							"dataValueType": 8,
+							"width": 196
+						},
+						{
+							"id": "1f1d2f6d-c6ac-c7c6-675b-bbb6de4c37e1",
+							"code": "GridDetail_kwt0jsmDS_UsrEndDate",
+							"caption": "#ResourceString(GridDetail_kwt0jsmDS_UsrEndDate)#",
+							"dataValueType": 8,
+							"width": 173
+						},
+						{
+							"id": "71561b42-53c0-ffb7-0075-6f52263c9bba",
+							"code": "GridDetail_kwt0jsmDS_UsrCustomer",
+							"caption": "#ResourceString(GridDetail_kwt0jsmDS_UsrCustomer)#",
+							"dataValueType": 10
+						},
+						{
+							"id": "0a9ca3b3-471d-ec1d-d38e-05197d42299d",
+							"code": "GridDetail_kwt0jsmDS_UsrComment",
+							"caption": "#ResourceString(GridDetail_kwt0jsmDS_UsrComment)#",
+							"dataValueType": 30
+						},
+						{
+							"id": "4330b1b4-8842-4b56-7a31-55bc00eda45a",
+							"code": "GridDetail_kwt0jsmDS_CreatedOn",
+							"caption": "#ResourceString(GridDetail_kwt0jsmDS_CreatedOn)#",
+							"dataValueType": 7
+						}
+					],
+					"placeholder": false,
+					"bulkActions": []
+				},
+				"parentName": "GridContainer_5ap7wow",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetail_kwt0jsm_AddTagsBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Add tag",
+					"icon": "tag-icon",
+					"clicked": {
+						"request": "crt.AddTagsInRecordsRequest",
+						"params": {
+							"dataSourceName": "GridDetail_kwt0jsmDS",
+							"filters": "$GridDetail_kwt0jsm | crt.ToCollectionFilters : 'GridDetail_kwt0jsm' : $GridDetail_kwt0jsm_SelectionState | crt.SkipIfSelectionEmpty : $GridDetail_kwt0jsm_SelectionState"
+						}
+					},
+					"items": []
+				},
+				"parentName": "SailboatGridDetail",
+				"propertyName": "bulkActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetail_kwt0jsm_RemoveTagsBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Remove tag",
+					"icon": "delete-button-icon",
+					"clicked": {
+						"request": "crt.RemoveTagsInRecordsRequest",
+						"params": {
+							"dataSourceName": "GridDetail_kwt0jsmDS",
+							"filters": "$GridDetail_kwt0jsm | crt.ToCollectionFilters : 'GridDetail_kwt0jsm' : $GridDetail_kwt0jsm_SelectionState | crt.SkipIfSelectionEmpty : $GridDetail_kwt0jsm_SelectionState"
+						}
+					}
+				},
+				"parentName": "GridDetail_kwt0jsm_AddTagsBulkAction",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetail_kwt0jsm_ExportToExcelBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Export to Excel",
+					"icon": "export-button-icon",
+					"clicked": {
+						"request": "crt.ExportDataGridToExcelRequest",
+						"params": {
+							"viewName": "SailboatGridDetail",
+							"filters": "$GridDetail_kwt0jsm | crt.ToCollectionFilters : 'GridDetail_kwt0jsm' : $GridDetail_kwt0jsm_SelectionState | crt.SkipIfSelectionEmpty : $GridDetail_kwt0jsm_SelectionState"
+						}
+					}
+				},
+				"parentName": "SailboatGridDetail",
+				"propertyName": "bulkActions",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetail_kwt0jsm_MergeBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Merge",
+					"icon": "merge-icon",
+					"clicked": {
+						"request": "crt.MergeRecordsRequest",
+						"params": {
+							"dataSourceName": "GridDetail_kwt0jsmDS",
+							"selectionState": "$GridDetail_kwt0jsm_SelectionState"
+						}
+					}
+				},
+				"parentName": "SailboatGridDetail",
+				"propertyName": "bulkActions",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetail_kwt0jsm_DeleteBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Delete",
+					"icon": "delete-button-icon",
+					"clicked": {
+						"request": "crt.DeleteRecordsRequest",
+						"params": {
+							"dataSourceName": "GridDetail_kwt0jsmDS",
+							"filters": "$GridDetail_kwt0jsm | crt.ToCollectionFilters : 'GridDetail_kwt0jsm' : $GridDetail_kwt0jsm_SelectionState | crt.SkipIfSelectionEmpty : $GridDetail_kwt0jsm_SelectionState"
+						}
+					}
+				},
+				"parentName": "SailboatGridDetail",
+				"propertyName": "bulkActions",
+				"index": 3
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -373,6 +812,15 @@ define("UsrSailboat_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 					"PDS_UsrPrice_ya3y6hb": {
 						"modelConfig": {
 							"path": "PDS.UsrPrice"
+						},
+						"validators": {
+							"MySuperValidator": {
+								"type": "usr.DGValidator",
+								"params": {
+									"minValue": 200,
+									"message": "#ResourceString(PriceCannotBeLess)#"
+								}
+							}
 						}
 					},
 					"PDS_UsrDriveType_odg6yze": {
@@ -437,6 +885,15 @@ define("UsrSailboat_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 					"PDS_UsrPassengersCount_apj5crs": {
 						"modelConfig": {
 							"path": "PDS.UsrPassengersCount"
+						},
+						"validators": {
+							"MySuperValidator": {
+								"type": "usr.DGValidator",
+								"params": {
+									"minValue": 2,
+									"message": "#ResourceString(PassengersCountCannotBeLess)#"
+								}
+							}
 						}
 					},
 					"PDS_UsrNumber_kfz0n2l": {
@@ -484,6 +941,68 @@ define("UsrSailboat_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 						"modelConfig": {
 							"path": "PDS.UsrTicketPrice"
 						}
+					},
+					"PDS_UsrManagerEmail_23wkjdo": {
+						"modelConfig": {
+							"path": "PDS.UsrManagerEmail_23wkjdo"
+						}
+					},
+					"GridDetail_kwt0jsm": {
+						"isCollection": true,
+						"modelConfig": {
+							"path": "GridDetail_kwt0jsmDS",
+							"filterAttributes": [
+								{
+									"name": "GridDetailSearchFilter_d8j54yh_GridDetail_kwt0jsm",
+									"loadOnChange": true
+								}
+							],
+							"sortingConfig": {
+								"default": [
+									{
+										"direction": "asc",
+										"columnName": "CreatedOn"
+									}
+								]
+							}
+						},
+						"viewModelConfig": {
+							"attributes": {
+								"GridDetail_kwt0jsmDS_UsrStartDate": {
+									"modelConfig": {
+										"path": "GridDetail_kwt0jsmDS.UsrStartDate"
+									}
+								},
+								"GridDetail_kwt0jsmDS_UsrEndDate": {
+									"modelConfig": {
+										"path": "GridDetail_kwt0jsmDS.UsrEndDate"
+									}
+								},
+								"GridDetail_kwt0jsmDS_UsrCustomer": {
+									"modelConfig": {
+										"path": "GridDetail_kwt0jsmDS.UsrCustomer"
+									}
+								},
+								"GridDetail_kwt0jsmDS_UsrComment": {
+									"modelConfig": {
+										"path": "GridDetail_kwt0jsmDS.UsrComment"
+									}
+								},
+								"GridDetail_kwt0jsmDS_CreatedOn": {
+									"modelConfig": {
+										"path": "GridDetail_kwt0jsmDS.CreatedOn"
+									}
+								},
+								"GridDetail_kwt0jsmDS_Id": {
+									"modelConfig": {
+										"path": "GridDetail_kwt0jsmDS.Id"
+									}
+								}
+							}
+						}
+					},
+					"CategoriesMultiSelect_List_Items_Predefined_Filter": {
+						"value": null
 					}
 				}
 			},
@@ -504,7 +1023,15 @@ define("UsrSailboat_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 				"operation": "merge",
 				"path": [],
 				"values": {
-					"primaryDataSourceName": "PDS"
+					"primaryDataSourceName": "PDS",
+					"dependencies": {
+						"GridDetail_kwt0jsmDS": [
+							{
+								"attributePath": "UsrParentSailboat",
+								"relationPath": "PDS.Id"
+							}
+						]
+					}
 				}
 			},
 			{
@@ -516,9 +1043,39 @@ define("UsrSailboat_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 					"PDS": {
 						"type": "crt.EntityDataSource",
 						"config": {
-							"entitySchemaName": "UsrSailboat"
+							"entitySchemaName": "UsrSailboat",
+							"attributes": {
+								"UsrManagerEmail_23wkjdo": {
+									"path": "UsrManager.Email",
+									"type": "ForwardReference"
+								}
+							}
 						},
 						"scope": "page"
+					},
+					"GridDetail_kwt0jsmDS": {
+						"type": "crt.EntityDataSource",
+						"scope": "viewElement",
+						"config": {
+							"entitySchemaName": "UsrSailboatRental",
+							"attributes": {
+								"UsrStartDate": {
+									"path": "UsrStartDate"
+								},
+								"UsrEndDate": {
+									"path": "UsrEndDate"
+								},
+								"UsrCustomer": {
+									"path": "UsrCustomer"
+								},
+								"UsrComment": {
+									"path": "UsrComment"
+								},
+								"CreatedOn": {
+									"path": "CreatedOn"
+								}
+							}
+						}
 					}
 				}
 			}
@@ -536,9 +1093,56 @@ define("UsrSailboat_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 					/* Call the next handler if it exists and return its result. */
 					return next?.handle(request);
 				}
+			},
+			{
+				request: "crt.HandleViewModelAttributeChangeRequest",
+				/* The custom implementation of the system query handler. */
+				handler: async (request, next) => {
+      				if (request.attributeName === 'PDS_UsrPrice_ya3y6hb' || 		        // if price changed
+					   request.attributeName === 'PDS_UsrPassengersCount_apj5crs' ) { 		// or Passenger count changed
+						let price = await request.$context.PDS_UsrPrice_ya3y6hb;
+						let passengers = await request.$context.PDS_UsrPassengersCount_apj5crs;
+						let ticket_price = price / passengers;
+						request.$context.PDS_UsrTicketPrice_qfwh98g = ticket_price;
+					}
+					/* Call the next handler if it exists and return its result. */
+					return next?.handle(request);
+				}
+			},
+			{
+				request: "crt.HandleViewModelAttributeChangeRequest",
+				/* The custom implementation of the system query handler. */
+				handler: async (request, next) => {
+      				if (request.attributeName === 'PDS_UsrTicketPrice_qfwh98g') { 		// or Passenger count changed
+						console.log("Ticket price:" + await request.$context.PDS_UsrTicketPrice_qfwh98g);
+					}
+					/* Call the next handler if it exists and return its result. */
+					return next?.handle(request);
+				}
 			}
 		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
-		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/
+		validators: /**SCHEMA_VALIDATORS*/{
+			"usr.DGValidator": {
+				validator: function (config) {
+					return function (control) {
+						let value = control.value;
+						let minValue = config.minValue;
+
+						return value >= minValue ? null : { "usr.DGValidator": { message: config.message } } ;
+						
+					};
+				},
+				params: [
+					{
+						name: "minValue"
+					},
+					{
+						name: "message"
+					}
+				],
+				async: false
+			}
+		}/**SCHEMA_VALIDATORS*/
 	};
 });

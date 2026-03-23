@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "5ef236f4-99cd-4570-a0fa-72105d80d936",
+    "Name": "UsrViewSailboatCategories",
+    "ModifiedOnUtc": "\/Date(1774265779000)\/",
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "All Sailboat Categories",
+    "DependsOn": []
+  }
+}

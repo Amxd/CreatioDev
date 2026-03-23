@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "f400126d-eb73-4c94-aad9-3008f9be2d1c",
+    "Name": "UsrSailboatRentalFormPage",
+    "ModifiedOnUtc": "\/Date(1774262559000)\/",
+    "Parent": {
+      "UId": "ecdcc8ff-272c-4957-9381-7d74ce17e140",
+      "Name": "BaseMiniPageTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Sailboat Rental form page"
+  }
+}
