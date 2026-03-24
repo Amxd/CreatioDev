@@ -326,9 +326,15 @@
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
+		<Reference Include="CrtCustomer360App">
+			<HintPath>$(RelativePkgFolderPath)/CrtCustomer360App/$(StandalonePackageAssemblyPath)/CrtCustomer360App.dll</HintPath>
+			<SpecificVersion>False</SpecificVersion>
+			<Private>False</Private>
+		</Reference>
 	</ItemGroup>
 	<ItemGroup Label="Standalone package external assembly references" />
 	<ItemGroup Label="Entity Files">
+		<Compile Remove="$(RelativePkgFolderPath)/UsrSailboat/Schemas/Account/Account.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrSailboat/Schemas/Account/Account.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/UsrSailboat/Schemas/UsrSailboat/UsrSailboat.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrSailboat/Schemas/UsrSailboat/UsrSailboat.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/UsrSailboat/Schemas/UsrSailboatCategoriesStorage/UsrSailboatCategoriesStorage.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrSailboat/Schemas/UsrSailboatCategoriesStorage/UsrSailboatCategoriesStorage.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/UsrSailboat/Schemas/UsrSailboatCategory/UsrSailboatCategory.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrSailboat/Schemas/UsrSailboatCategory/UsrSailboatCategory.cs')" />

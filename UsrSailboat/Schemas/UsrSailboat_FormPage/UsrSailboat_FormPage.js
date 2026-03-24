@@ -60,6 +60,49 @@ define("UsrSailboat_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 			},
 			{
 				"operation": "insert",
+				"name": "Button_kvdp16x",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_kvdp16x_caption)#",
+					"color": "outline",
+					"disabled": false,
+					"size": "medium",
+					"iconPosition": "left-icon",
+					"visible": true,
+					"icon": "actions-button-icon",
+					"menuItems": [],
+					"clickMode": "menu"
+				},
+				"parentName": "CardToggleContainer",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "RunAvgProcessMenuItem",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(RunAvgProcessMenuItem_caption)#",
+					"visible": true,
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "UsrCalcAverageTicketPriceProcess",
+							"processRunType": "ForTheSelectedPage",
+							"saveAtProcessStart": true,
+							"showNotification": true,
+							"notificationText": "#ResourceString(RunAvgProcessMenuItem_clicked_params_notificationText)#",
+							"recordIdProcessParameterName": "SailboatIdParameter"
+						}
+					},
+					"icon": "calculator-icon"
+				},
+				"parentName": "Button_kvdp16x",
+				"propertyName": "menuItems",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "PushMeButton",
 				"values": {
 					"type": "crt.Button",
@@ -77,7 +120,7 @@ define("UsrSailboat_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 				},
 				"parentName": "CardToggleContainer",
 				"propertyName": "items",
-				"index": 0
+				"index": 1
 			},
 			{
 				"operation": "insert",
