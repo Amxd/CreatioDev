@@ -8,23 +8,23 @@
     ".NETFramework,Version=v4.7.2": []
   },
   "packageFolders": {
-    "C:\\WINDOWS\\TEMP\\1\\NT AUTHORITY_NETWORK SERVICE\\Default\\dotnet\\.nuget\\packages\\": {},
+    "C:\\Users\\hugoa\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "8.3.3.3193",
+    "version": "1.0.0",
     "restore": {
       "projectUniqueName": "C:\\Creatio\\Terrasoft.WebApp\\Terrasoft.Configuration\\Pkg\\UsrSailboat\\Files\\UsrSailboat.csproj",
       "projectName": "UsrSailboat",
       "projectPath": "C:\\Creatio\\Terrasoft.WebApp\\Terrasoft.Configuration\\Pkg\\UsrSailboat\\Files\\UsrSailboat.csproj",
-      "packagesPath": "C:\\WINDOWS\\TEMP\\1\\NT AUTHORITY_NETWORK SERVICE\\Default\\dotnet\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\hugoa\\.nuget\\packages\\",
       "outputPath": "C:\\Creatio\\Terrasoft.WebApp\\Terrasoft.Configuration\\Pkg\\UsrSailboat\\Files\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\WINDOWS\\TEMP\\1\\NT AUTHORITY_NETWORK SERVICE\\Default\\dotnet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hugoa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
