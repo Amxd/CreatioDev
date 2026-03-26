@@ -1,4 +1,4 @@
-define("UsrSailboat_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/()/**SCHEMA_ARGS*/ {
+define("UsrSailboat_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(sdk)/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
@@ -100,6 +100,22 @@ define("UsrSailboat_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 				"parentName": "Button_kvdp16x",
 				"propertyName": "menuItems",
 				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "RunMaxPriceWebServiceMenuItem",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(RunMaxPriceWebServiceMenuItem_caption)#",
+					"visible": true,
+					"clicked": {
+						"request": "usr.RunMaxPriceWebServiceRequest"
+					},
+					"icon": "rocket-icon"
+				},
+				"parentName": "Button_kvdp16x",
+				"propertyName": "menuItems",
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -1159,6 +1175,38 @@ define("UsrSailboat_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
       				if (request.attributeName === 'PDS_UsrTicketPrice_qfwh98g') { 		// or Passenger count changed
 						console.log("Ticket price:" + await request.$context.PDS_UsrTicketPrice_qfwh98g);
 					}
+					/* Call the next handler if it exists and return its result. */
+					return next?.handle(request);
+				}
+			},
+			{
+				request: "usr.RunMaxPriceWebServiceRequest",
+				handler: async (request, next) => {
+					console.log("Run web service button works...");
+
+					// get id from drive type lookup type object
+					var typeObject = await request.$context.PDS_UsrDriveType_odg6yze;
+					var selectedDriveTypeId = "";
+					if (typeObject) {
+						selectedDriveTypeId = typeObject.value;
+					}
+					/* Create an instance of the HTTP client from @creatio-devkit/common. */
+					const httpClientService = new sdk.HttpClientService();
+
+					/* Specify the URL to run web service method. */
+					const baseUrl = Terrasoft.utils.uri.getConfigurationWebServiceBaseUrl();
+					const transferName = "rest";
+					const serviceName = "SailboatService";
+					const methodName = "GetMaxPriceByDriveTypeId";
+					const endpoint = Terrasoft.combinePath(baseUrl, transferName, serviceName, methodName);
+					/* Send a POST HTTP request. The HTTP client converts the response body from JSON to a JS object automatically. */
+					var params = {
+						driveTypeId: selectedDriveTypeId
+					};
+					const response = await httpClientService.post(endpoint, params);
+					
+					console.log("response max price = " + response.body.GetMaxPriceByDriveTypeIdResult);
+					
 					/* Call the next handler if it exists and return its result. */
 					return next?.handle(request);
 				}

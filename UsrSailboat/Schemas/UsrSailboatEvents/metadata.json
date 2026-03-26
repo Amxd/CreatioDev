@@ -1,0 +1,24 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "SourceCodeSchemaManager",
+      "UId": "81ac2e23-09fd-431d-a940-49a52c3a6f1b",
+      "A2": "UsrSailboatEvents",
+      "A5": "3ac8eccb-9516-4513-a725-055a3f8ee7e9",
+      "B1": [],
+      "B2": [
+        {
+          "UId": "392e1806-84b6-5658-d609-46daf7882e82",
+          "A2": "ValueIsTooBig",
+          "A3": "81ac2e23-09fd-431d-a940-49a52c3a6f1b",
+          "A4": "81ac2e23-09fd-431d-a940-49a52c3a6f1b",
+          "A5": "3ac8eccb-9516-4513-a725-055a3f8ee7e9"
+        }
+      ],
+      "B3": [],
+      "B6": "640d5475-1f12-404d-af0d-47936d107bdc",
+      "B8": "8.3.3.3193",
+      "HD1": "50e3acc0-26fc-4237-a095-849a1d534bd3"
+    }
+  }
+}
