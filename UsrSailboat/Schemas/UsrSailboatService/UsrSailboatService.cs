@@ -7,6 +7,7 @@ namespace Terrasoft.Configuration
     using Terrasoft.Web.Common;
     using System;
     using System.Web.SessionState;
+
     [ServiceContract]
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Required)]
     public class SailboatService : BaseService, IReadOnlySessionState
@@ -29,6 +30,7 @@ namespace Terrasoft.Configuration
             decimal result = select.ExecuteScalar<decimal>();
             return result;
         }
+
         [OperationContract]
         [WebInvoke(Method = "GET", BodyStyle = WebMessageBodyStyle.Wrapped,
             RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
@@ -36,6 +38,5 @@ namespace Terrasoft.Configuration
         {
             return "OK!";
         }
-
     }
 }

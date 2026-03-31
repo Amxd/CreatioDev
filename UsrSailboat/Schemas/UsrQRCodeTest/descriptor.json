@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "7bcc1565-bbee-46fe-883e-315416af480b",
+    "Name": "UsrQRCodeTest",
+    "ModifiedOnUtc": "\/Date(1774547738000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "QRCodeTest"
+  }
+}

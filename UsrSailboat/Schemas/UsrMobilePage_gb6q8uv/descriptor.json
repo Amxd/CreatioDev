@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "e5c08327-508e-4bdb-bd56-63ad8ed5fd64",
+    "Name": "UsrMobilePage_gb6q8uv",
+    "ModifiedOnUtc": "\/Date(1774547836000)\/",
+    "Parent": {
+      "UId": "478ab83b-527b-4830-b2b8-2206bb9bf283",
+      "Name": "BlankMobilePageTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "New mobile edit page"
+  }
+}
